@@ -2,6 +2,14 @@
 #include <gtest/gtest.h>
 #include <vector>
 
+TEST(ShiftArray, DefaultTest) {
+  std::vector<int> nums1 = {1, 2, 3, 0, 0, 0};
+  std::vector<int> exp1 = {1, 2, 2, 3, 0, 0};
+  shift(nums1, 1);
+  EXPECT_EQ(nums1, exp1);
+}
+
+
 TEST(MergeSortArray, DefaultTest) {
   std::vector<int> nums1 = {1, 2, 3, 0, 0, 0};
   std::vector<int> nums2 = {2, 5, 6};
