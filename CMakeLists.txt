@@ -6,6 +6,7 @@ enable_testing()
 find_package(GTest REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SRC ${PROJECT_SOURCE_DIR}/src)
 set(TEST ${PROJECT_SOURCE_DIR}/tests)

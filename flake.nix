@@ -20,10 +20,12 @@
           {
             packages = with pkgs; [
               clang-tools
+              lldb
               cmake
               gtest
               cmake-language-server
             ] ++ (if system == "aarch64-darwin" then [ ] else [ gdb ]);
+
           };
       });
     };
