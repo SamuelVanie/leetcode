@@ -5,8 +5,16 @@
 TEST(ShiftArray, DefaultTest) {
   std::vector<int> nums1 = {1, 2, 3, 0, 0, 0};
   std::vector<int> exp1 = {1, 2, 2, 3, 0, 0};
-  shift(nums1, 1);
-  EXPECT_EQ(nums1, exp1);
+  shift(&nums1, 1);
+  EXPECT_EQ(nums1, exp1)
+  ;
+}
+
+TEST(ShiftArray, BeginningOfList) {
+  std::vector<int> nums2 = {1, 2, 3, 4, 5, 6};
+  std::vector<int> exp2 = {1, 1, 2, 3, 4, 5};
+  shift(&nums2, 0);
+  EXPECT_EQ(nums2, exp2);
 }
 
 
