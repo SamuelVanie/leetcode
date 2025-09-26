@@ -9,7 +9,7 @@
 	 (eval . (local-set-key (kbd "<f8>")
 				(lambda nil (interactive)
 				  (setq-local compile-command
-					      "java -cp junit-4.13.2.jar:hamcrest-core-3.0.jar:. org.junit.runner.JUnitCore ")
+					      "java -cp junit-4.13.2.jar:hamcrest-3.0.jar:. org.junit.runner.JUnitCore ")
 				  (project-compile))))
 	 (eval . (local-set-key (kbd "<f9>")
 				(lambda nil (interactive)
