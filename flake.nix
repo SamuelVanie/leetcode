@@ -15,7 +15,7 @@
       in
         {
           devShell = pkgs.mkShell {
-            buildInputs = with pkgs; [ jdk17 jdt-language-server ];
+            buildInputs = with pkgs; [ jdk ];
           };
         });
 }
